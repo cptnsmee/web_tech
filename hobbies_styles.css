@@ -33,25 +33,6 @@ section {
 h2 {
     margin-bottom: 10px;
 }
-
-.about-me img, .personal-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.gallery-images {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.gallery-images img {
-    width: 100%;
-    max-width: 200px;
-    border-radius: 5px;
-}
-
 footer {
     background: #333;
     color: #fff;
