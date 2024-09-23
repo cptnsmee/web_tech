@@ -1,88 +1,109 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
 }
 
-header {
-    background-color: #cccccc;
-    text-align: center;
-    padding: 20px;
+img {
+    width: 100%;
+    height: auto;
 }
 
-header h1 {
+h1, h2 {
     margin-bottom: 10px;
 }
 
-header p {
-    font-size: 1.1em;
+p {
+    margin-bottom: 20px;
 }
 
-nav {
-    background-color: #333;
-    color: white;
-}
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    list-style: none;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-main {
+.header {
+    background-color: #cccccc;
+    text-align: center;
     padding: 20px;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+.header h1 {
+    margin-bottom: 5px;
 }
 
-article {
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    padding: 10px;
+.header p {
+    font-size: 1.2em;
 }
 
-article img {
-    width: 100%;
-    height: auto;
+
+.nav {
+    background-color: #333333;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+.nav ul li {
+    margin-bottom: 10px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
     display: block;
 }
 
-.full-width {
-    grid-column: span 2;
+.nav ul li a:hover {
+    text-decoration: underline;
 }
 
-footer {
+
+.main-content {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+.sink-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sink-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+.sink-features {
+    grid-column: span 2;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+.footer {
     background-color: #cccccc;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin-top: 20px;
 }
